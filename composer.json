@@ -1,0 +1,8 @@
+{
+	"autoload":{
+		"classmap":[
+			"Vendor",
+			"App/Http/Models"
+		]
+	}
+}

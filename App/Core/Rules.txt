@@ -1,0 +1,31 @@
+Config
+	> get the items from $GLOBALS variable
+
+Controller
+	> creating new instance for models inside the Model folder
+	> returning ajax response
+	> returning view response into the masterpage
+
+DB
+	> database connection
+	> DB::ready()
+	> DB::ready()->query() 	// raw query
+	> DB::ready()->get() 	// get items
+	> DB::ready()->delete() // delete
+	> DB::ready()->insert() // insert
+	> DB::ready()->update() // update
+
+Globals
+	> Globals::get() // return post or get
+
+Routes
+	> this if for routing
+
+Sessions
+	> for sessions
+
+Token
+	> tokens
+
+Validation
+	> for form validations

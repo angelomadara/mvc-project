@@ -1,0 +1,15 @@
+Class name and Method name should be in PascalCase
+
+Every class should have an Index method
+
+
+For VIEWS
+	> arrays
+		Output in the body
+			> $_OUT['page_title'] = 'Login Page';
+		CSS to be call 
+			> $css = ['login.css'];
+		JS to be call
+			> $js = ['login.js'];
+	> data to be return in the VIEW (sample)
+		> return $this->MasterPage('home/index',$css,$js,$_OUT);

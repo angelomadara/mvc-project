@@ -1,0 +1,17 @@
+php_flag display_errors on
+php_value error_reporting 9999
+Options -MultiViews
+
+RewriteEngine On
+
+# If the .htaccess is inside the ROOT DIR then the re-write base is /
+# RewriteBase for online = RewriteBase /
+# And if the .htaccess is not inside the ROOT DIR thinking that it is inside the SUB DIR then we must set the ~FolderName
+# RewriteBase for developement = RewriteBase /~FolderName
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
